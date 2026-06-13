@@ -3,213 +3,440 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mangesh Rajguru | Portfolio</title>
+  <title>Mangesh Rajguru | Full Stack Developer</title>
+  <meta name="description" content="Mangesh Rajguru — Full Stack Developer & MERN Specialist. Building production-ready web apps with AI integrations." />
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- this is the top gradient line  -->
-  <div class="top-accent-bar"></div>
-
-  <!-- ab yaha pe , included navbar  -->
-  <nav class="navbar">
-    <span class="nav-logo">Mangesh<span>.</span></span>
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+  
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">MR<span>.</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#academics">Academics</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a href="#contact" class="nav-cta">Hire Me</a>
   </nav>
 
-  <!--this is the about section -->
+  
   <section class="hero" id="home">
-    <div class="hero-text">
-      <p class="hero-greeting">Hi, I'm</p>
-      <h1 class="hero-name">Mangesh <span class="highlight">Rajguru</span></h1>
-      <p class="hero-tagline">Full Stack Developer &nbsp;·&nbsp; MERN Specialist &nbsp;·&nbsp; AI Integrations &nbsp;·&nbsp; Open to Opportunities</p>
-      <div class="hero-divider">
-        <span></span><span></span><span></span>
+    <div class="hero-bg-text" aria-hidden="true">MR</div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        Open to Opportunities
       </div>
-      <a href="#contact" class="btn-contact">Contact Me <span class="arrow">→</span></a>
+
+      <h1 class="hero-heading">
+        <span class="small-text">Hi, I'm</span>
+        <span class="name-line">Mangesh</span>
+        <span class="name-line accent-text">Rajguru<span class="dot-accent">.</span></span>
+      </h1>
+
+      <p class="hero-role">Full Stack Developer &nbsp;·&nbsp; MERN Specialist &nbsp;·&nbsp; AI Integrations</p>
+      <p class="hero-desc">Building scalable, production-ready web apps with AI-powered features — from resume intelligence to automated interview platforms.</p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+        <a href="assets/resume.pdf" class="btn-ghost" download>Download CV <i class="fas fa-download"></i></a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/itsmrajguru" target="_blank" id="hero-gh" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/mangesh-rajguru" target="_blank" id="hero-li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:msrajguru7@gmail.com" id="hero-mail" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
     </div>
-    <div class="hero-img-wrapper">
-      <div class="hero-img-placeholder">MR</div>
+
+    <div class="hero-right">
+      <div class="avatar-wrap">
+        <div class="avatar-ring">
+          <div class="avatar-inner">MR</div>
+        </div>
+        <span class="online-status">
+          <span class="dot"></span> Available
+        </span>
+      </div>
+
+      <div class="float-card fc-cgpa">
+        <i class="fas fa-star"></i>
+        <div>
+          <strong>9.59 / 10</strong>
+          <span>CGPA</span>
+        </div>
+      </div>
+
+      <div class="float-card fc-stack">
+        <i class="fas fa-layer-group"></i>
+        <div>
+          <strong>MERN Stack</strong>
+          <span>Specialist</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="hero-stats-bar">
+      <div class="stat-item"><strong>9.59</strong><span>CGPA</span></div>
+      <div class="stat-sep"></div>
+      <div class="stat-item"><strong>3+</strong><span>Projects</span></div>
+      <div class="stat-sep"></div>
+      <div class="stat-item"><strong>2</strong><span>Internships</span></div>
+      <div class="stat-sep"></div>
+      <div class="stat-item"><strong>MERN</strong><span>Full Stack</span></div>
     </div>
   </section>
 
+  
   <section class="about" id="about">
-    <div class="section-header">
-      <p class="section-subtitle">Who I Am</p>
-      <h2 class="section-title">About</h2>
-      <div class="section-divider"><span></span><span></span></div>
+    <div class="container">
+      <div class="section-label">— About Me</div>
+      <div class="about-grid">
+
+        <div class="about-left">
+          <h2 class="section-heading">Turning Ideas Into <span class="accent-text">Digital Reality</span></h2>
+          <p>I'm a Computer Engineering student at Trinity Academy of Engineering, Pune with a CGPA of <strong>9.59/10</strong>. I specialize in full-stack MERN development and AI integrations, building production-ready applications from the ground up.</p>
+          <p>Currently building the <strong>CareerSync ecosystem</strong> — a recruitment platform with AI-powered resume parsing, automated interview workflows, and a career guidance chatbot. Also deep-diving into Cloud & DevOps.</p>
+          <div class="about-tags">
+            <span>React.js</span><span>Node.js</span><span>MongoDB</span>
+            <span>Gemini API</span><span>Python</span><span>Git</span>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="about-card-grid">
+            <div class="mini-card">
+              <i class="fas fa-globe"></i>
+              <h4>Web Dev</h4>
+              <p>Responsive, performant front-ends with React.js & modern CSS.</p>
+            </div>
+            <div class="mini-card">
+              <i class="fas fa-server"></i>
+              <h4>Backend</h4>
+              <p>REST APIs with Node.js, Express, MongoDB & JWT authentication.</p>
+            </div>
+            <div class="mini-card">
+              <i class="fas fa-robot"></i>
+              <h4>AI Integration</h4>
+              <p>Gemini API, AssemblyAI, prompt engineering & AI pipelines.</p>
+            </div>
+            <div class="mini-card info-card">
+              <div class="info-line"><i class="fas fa-map-marker-alt"></i> Pune, Maharashtra</div>
+              <div class="info-line"><i class="fas fa-university"></i> Trinity AOE, 2023–27</div>
+              <div class="info-line"><i class="fas fa-envelope"></i> msrajguru7@gmail.com</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="about-grid">
-      <div class="about-card">
-        <div class="about-icon">👤</div>
-        <div>
-          <h3>About Me</h3>
-          <p>Hi, I'm Mangesh Rajguru, a Computer Engineering student at Trinity Academy of Engineering, Pune. I specialize in full-stack MERN development and AI integrations with a CGPA of 9.59.</p>
+  </section>
+
+  
+  <section class="skills" id="skills">
+    <div class="skills-label">Skills &amp; Technologies</div>
+
+    <div class="marquee-wrap">
+      
+      <div class="marquee marquee-fwd">
+        <div class="marquee-inner">
+          <span class="sk-chip"><i class="devicon-html5-plain colored"></i> HTML5</span>
+          <span class="sk-chip"><i class="devicon-css3-plain colored"></i> CSS3</span>
+          <span class="sk-chip"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+          <span class="sk-chip"><i class="devicon-react-original colored"></i> React.js</span>
+          <span class="sk-chip"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+          <span class="sk-chip"><i class="devicon-express-original"></i> Express.js</span>
+          <span class="sk-chip"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+          <span class="sk-chip"><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</span>
+          <span class="sk-chip"><i class="devicon-python-plain colored"></i> Python</span>
+          <span class="sk-chip"><i class="devicon-git-plain colored"></i> Git</span>
+          <span class="sk-chip"><i class="devicon-github-original"></i> GitHub</span>
+          <span class="sk-chip"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+          
+          <span class="sk-chip"><i class="devicon-html5-plain colored"></i> HTML5</span>
+          <span class="sk-chip"><i class="devicon-css3-plain colored"></i> CSS3</span>
+          <span class="sk-chip"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+          <span class="sk-chip"><i class="devicon-react-original colored"></i> React.js</span>
+          <span class="sk-chip"><i class="devicon-nodejs-plain colored"></i> Node.js</span>
+          <span class="sk-chip"><i class="devicon-express-original"></i> Express.js</span>
+          <span class="sk-chip"><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
+          <span class="sk-chip"><i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS</span>
+          <span class="sk-chip"><i class="devicon-python-plain colored"></i> Python</span>
+          <span class="sk-chip"><i class="devicon-git-plain colored"></i> Git</span>
+          <span class="sk-chip"><i class="devicon-github-original"></i> GitHub</span>
+          <span class="sk-chip"><i class="devicon-vscode-plain colored"></i> VS Code</span>
         </div>
       </div>
-      <div class="about-card about-card-reverse">
-        <div class="about-img-box"><span>&lt;/&gt;</span></div>
-        <div>
-          <h3>Building Production-Ready Apps</h3>
-          <p>I enjoy building scalable web applications combining backend architecture with smart AI-powered features — from resume intelligence engines to automated mock interview platforms.</p>
-        </div>
-      </div>
-      <div class="about-card">
-        <div class="about-icon">💡</div>
-        <div>
-          <h3>Current Focus</h3>
-          <p>Currently building the CareerSync ecosystem — a recruitment platform with AI-powered resume parsing, automated interview workflows, and a career guidance chatbot. Also deep-diving into Cloud Computing and DevOps.</p>
+      
+      <div class="marquee marquee-rev">
+        <div class="marquee-inner">
+          <span class="sk-chip outline"><i class="fas fa-code"></i> REST APIs</span>
+          <span class="sk-chip outline"><i class="fas fa-database"></i> Mongoose</span>
+          <span class="sk-chip outline"><i class="fas fa-lock"></i> JWT Auth</span>
+          <span class="sk-chip outline"><i class="fas fa-robot"></i> Gemini API</span>
+          <span class="sk-chip outline"><i class="fas fa-microphone"></i> AssemblyAI</span>
+          <span class="sk-chip outline"><i class="fas fa-cloud"></i> Render</span>
+          <span class="sk-chip outline"><i class="fas fa-project-diagram"></i> Microservices</span>
+          <span class="sk-chip outline"><i class="fas fa-terminal"></i> Postman</span>
+          <span class="sk-chip outline"><i class="fas fa-code-branch"></i> CI/CD</span>
+          
+          <span class="sk-chip outline"><i class="fas fa-code"></i> REST APIs</span>
+          <span class="sk-chip outline"><i class="fas fa-database"></i> Mongoose</span>
+          <span class="sk-chip outline"><i class="fas fa-lock"></i> JWT Auth</span>
+          <span class="sk-chip outline"><i class="fas fa-robot"></i> Gemini API</span>
+          <span class="sk-chip outline"><i class="fas fa-microphone"></i> AssemblyAI</span>
+          <span class="sk-chip outline"><i class="fas fa-cloud"></i> Render</span>
+          <span class="sk-chip outline"><i class="fas fa-project-diagram"></i> Microservices</span>
+          <span class="sk-chip outline"><i class="fas fa-terminal"></i> Postman</span>
+          <span class="sk-chip outline"><i class="fas fa-code-branch"></i> CI/CD</span>
         </div>
       </div>
     </div>
   </section>
 
+  
   <section class="experience" id="experience">
-    <div class="section-header">
-      <p class="section-subtitle">Work</p>
-      <h2 class="section-title">Experience</h2>
-      <div class="section-divider"><span></span><span></span></div>
-    </div>
-    <div class="exp-container">
-      <div class="skill-icons">
-        <div class="skill-chip"><div class="skill-icon html-icon">HTML</div><span>HTML</span></div>
-        <div class="skill-chip"><div class="skill-icon css-icon">CSS</div><span>CSS</span></div>
-        <div class="skill-chip"><div class="skill-icon react-icon">⚛</div><span>React.js</span></div>
-        <div class="skill-chip"><div class="skill-icon node-icon">⬡</div><span>Node.js</span></div>
-        <div class="skill-chip"><div class="skill-icon mongo-icon">🍃</div><span>MongoDB</span></div>
-        <div class="skill-chip"><div class="skill-icon js-icon">JS</div><span>JavaScript</span></div>
-        <div class="skill-chip"><div class="skill-icon py-icon">🐍</div><span>Python</span></div>
-        <div class="skill-chip"><div class="skill-icon tail-icon">💨</div><span>Tailwind</span></div>
-      </div>
-      <div class="exp-cards">
-        <div class="exp-card">
-          <div class="exp-logo exp-logo-eyjds">E</div>
-          <div class="exp-details">
-            <h3>Web Development Intern</h3>
-            <p class="exp-company">EYJDS &nbsp;|&nbsp; Dec 2025 – Feb 2026 &nbsp;|&nbsp; Hybrid</p>
-            <p class="exp-tools">React.js · Node.js · MongoDB · Tailwind CSS · REST APIs · Git</p>
+    <div class="container">
+      <div class="section-label">— Experience</div>
+      <h2 class="section-heading">Work <span class="accent-text">Experience</span></h2>
+
+      <div class="exp-grid">
+
+        <div class="exp-card" id="exp-eyjds">
+          <div class="exp-num">01</div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <div class="exp-logo e-logo">E</div>
+              <div>
+                <h3>Web Development Intern</h3>
+                <p class="exp-company">EYJDS</p>
+              </div>
+            </div>
+            <p class="exp-date"><i class="fas fa-calendar-alt"></i> Dec 2025 – Feb 2026 &nbsp;·&nbsp; Hybrid</p>
+            <p class="exp-stack"><i class="fas fa-layer-group"></i> React.js · Node.js · MongoDB · Tailwind · REST APIs · Git</p>
             <ul>
-              <li>Contributed to a full-stack job portal with responsive React.js and Tailwind CSS interface.</li>
-              <li>Developed and optimized backend RESTful APIs with authentication, dynamic job listings, and application workflows.</li>
+              <li>Built a full-stack job portal with responsive React.js &amp; Tailwind CSS interface.</li>
+              <li>Developed backend REST APIs with JWT auth, dynamic job listings &amp; application workflows.</li>
               <li>Deployed production-ready builds on Render, optimizing performance and load times.</li>
             </ul>
           </div>
         </div>
-        <div class="exp-card">
-          <div class="exp-logo exp-logo-kanini">K</div>
-          <div class="exp-details">
-            <h3>Product Engineering Intern</h3>
-            <p class="exp-company">Kanini Software Solutions &nbsp;|&nbsp; Upcoming 2026</p>
+
+        <div class="exp-card" id="exp-kanini">
+          <div class="exp-num">02</div>
+          <div class="exp-body">
+            <div class="exp-meta">
+              <div class="exp-logo k-logo">K</div>
+              <div>
+                <h3>Product Engineering Intern</h3>
+                <p class="exp-company">Kanini Software Solutions</p>
+              </div>
+            </div>
+            <p class="exp-date"><i class="fas fa-hourglass-half"></i> Upcoming 2026</p>
             <ul>
               <li>Selected as Product Engineering Intern at Kanini Software Solutions India Pvt. Ltd.</li>
-              <li>Will contribute to product engineering workflows leveraging MERN stack and modern web technologies.</li>
+              <li>Will contribute to product engineering workflows leveraging MERN stack &amp; modern web tech.</li>
             </ul>
+            <span class="upcoming-tag">Upcoming</span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
+  
   <section class="projects" id="projects">
-    <div class="section-header">
-      <p class="section-subtitle">What I've Built</p>
-      <h2 class="section-title">Projects</h2>
-      <div class="section-divider"><span></span><span></span></div>
-    </div>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-thumb project-thumb-1"><span>CareerSync</span></div>
-        <div class="project-info">
+    <div class="container">
+      <div class="section-label">— What I've Built</div>
+      <h2 class="section-heading">Featured <span class="accent-text">Projects</span></h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card" data-num="01" id="proj-careersync">
+          <div class="project-card-header">
+            <div class="project-icon-wrap"><i class="fas fa-briefcase"></i></div>
+            <a href="https://github.com/itsmrajguru" target="_blank" class="gh-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
           <h3>CareerSync Platform</h3>
           <p>A MERN-based recruitment platform integrating AI-powered resume intelligence, job management, and automated interview workflows through secure microservice communication.</p>
           <div class="project-tags">
             <span>React.js</span><span>Node.js</span><span>MongoDB</span><span>Adzuna API</span><span>JWT</span>
           </div>
         </div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb project-thumb-2"><span>InterviewPilot</span></div>
-        <div class="project-info">
+
+        <div class="project-card" data-num="02" id="proj-interviewpilot">
+          <div class="project-card-header">
+            <div class="project-icon-wrap"><i class="fas fa-microphone-alt"></i></div>
+            <a href="https://github.com/itsmrajguru" target="_blank" class="gh-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
           <h3>InterviewPilot</h3>
           <p>An AI-powered mock interview platform conducting context-aware technical interviews tailored to users' resumes using Gemini API, AssemblyAI transcription, and a video pipeline.</p>
           <div class="project-tags">
             <span>React.js</span><span>Gemini API</span><span>AssemblyAI</span><span>MediaRecorder</span>
           </div>
         </div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb project-thumb-3"><span>GuruAI</span></div>
-        <div class="project-info">
+
+        <div class="project-card" data-num="03" id="proj-guruai">
+          <div class="project-card-header">
+            <div class="project-icon-wrap"><i class="fas fa-robot"></i></div>
+            <a href="https://github.com/itsmrajguru" target="_blank" class="gh-link"><i class="fab fa-github"></i> GitHub</a>
+          </div>
           <h3>GuruAI</h3>
           <p>A specialized AI Career Consultant for CareerSync delivering personalized roadmaps and resume optimization through advanced Prompt Engineering and System Identity Design.</p>
           <div class="project-tags">
             <span>React.js</span><span>Gemini API</span><span>Node.js</span><span>MongoDB</span>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
+  
   <section class="academics" id="academics">
-    <div class="section-header">
-      <p class="section-subtitle">Education</p>
-      <h2 class="section-title">Academic Achievements 🎓</h2>
-      <div class="section-divider"><span></span><span></span></div>
-    </div>
-    <div class="academics-grid">
-      <div class="academics-card">
-        <h3>College Performance</h3>
-        <p class="acad-inst">Trinity Academy of Engineering, Pune<br><span>Department: Computer Engineering</span></p>
-        <ul>
-          <li>First Year – 1st Sem: <strong>10.0 SGPA</strong> 🏆</li>
-          <li>Overall CGPA: <strong>9.59 / 10</strong></li>
-          <li>Expected Graduation: <strong>2027</strong></li>
-        </ul>
-      </div>
-      <div class="academics-card">
-        <h3>Achievements</h3>
-        <ul>
-          <li>Selected at Institute Level in <strong>Smart India Hackathon (SIH)</strong></li>
-          <li>Attended workshops on Python, Generative AI, and ChatGPT by <strong>GeeksforGeeks</strong></li>
-          <li>Achieved <strong>10.0 SGPA</strong> in First Year of B.Tech</li>
-        </ul>
-      </div>
-      <div class="academics-card">
-        <h3>Schooling</h3>
-        <ul>
-          <li>12th:Arts and Science jr College, Mehkar</li>
-          <li>10th:Sahakar Vidhya Mandir , Sultanpur </li>
-        </ul>
+    <div class="container">
+      <div class="section-label">— Education</div>
+      <h2 class="section-heading">Academic <span class="accent-text">Journey</span></h2>
+
+      <div class="acad-layout">
+
+        <div class="acad-timeline">
+          <div class="acad-item">
+            <div class="acad-year">2023–27</div>
+            <div class="acad-content">
+              <div class="acad-degree">B.E. Computer Engineering</div>
+              <div class="acad-inst">Trinity Academy of Engineering, Pune</div>
+              <div class="acad-cgpa">CGPA: <strong>9.59 / 10</strong> &nbsp;·&nbsp; 10.0 SGPA 🏆</div>
+            </div>
+          </div>
+          <div class="acad-item">
+            <div class="acad-year">HSC</div>
+            <div class="acad-content">
+              <div class="acad-degree">12th — Science Stream</div>
+              <div class="acad-inst">Arts and Science Jr College, Mehkar</div>
+            </div>
+          </div>
+          <div class="acad-item">
+            <div class="acad-year">SSC</div>
+            <div class="acad-content">
+              <div class="acad-degree">10th</div>
+              <div class="acad-inst">Sahakar Vidhya Mandir, Sultanpur</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="achievements-col">
+          <h3>Achievements</h3>
+          <ul class="ach-list">
+            <li><i class="fas fa-medal"></i> Selected at Institute Level in <strong>Smart India Hackathon (SIH)</strong></li>
+            <li><i class="fas fa-star"></i> Achieved <strong>10.0 SGPA</strong> in First Year of B.Tech</li>
+            <li><i class="fas fa-chalkboard-teacher"></i> Workshops on Python, Generative AI &amp; ChatGPT by <strong>GeeksforGeeks</strong></li>
+          </ul>
+
+          <div class="github-contrib-card">
+            <h4><i class="fab fa-github"></i> GitHub Contributions</h4>
+            <img src="https://ghchart.rshah.org/f07d07/itsmrajguru" alt="GitHub Contributions Chart" loading="lazy" />
+            <a href="https://github.com/itsmrajguru" target="_blank" class="btn-sm" id="gh-contrib-link">View Profile →</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
+  
   <section class="contact" id="contact">
-    <div class="contact-left">
-      <h2>Contact</h2>
-      <p>Feel free to reach out!</p>
-    </div>
-    <div class="contact-right">
-      <a href="mailto:msrajguru7@gmail.com" class="contact-link">
-        <span class="contact-icon contact-icon-mail">✉</span> msrajguru7@gmail.com
-      </a>
-      <a href="https://linkedin.com/in/mangesh-rajguru" target="_blank" class="contact-link">
-        <span class="contact-icon contact-icon-li">in</span> LinkedIn
-      </a>
-      <a href="https://github.com/itsmrajguru" target="_blank" class="contact-link">
-        <span class="contact-icon contact-icon-gh">⌥</span> github.com/itsmrajguru
-      </a>
+    <div class="container">
+      <div class="contact-inner">
+
+        <div class="contact-left">
+          <div class="section-label">— Get in Touch</div>
+          <h2 class="section-heading">Let's Build Something <span class="accent-text">Together</span></h2>
+          <p>Open to internships, full-time roles, freelance projects, and collaborations. Feel free to reach out!</p>
+
+          <div class="contact-links">
+            <a href="mailto:msrajguru7@gmail.com" class="c-link" id="c-email">
+              <i class="fas fa-envelope"></i>
+              msrajguru7@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/mangesh-rajguru" target="_blank" class="c-link" id="c-linkedin">
+              <i class="fab fa-linkedin-in"></i>
+              linkedin.com/in/mangesh-rajguru
+            </a>
+            <a href="https://github.com/itsmrajguru" target="_blank" class="c-link" id="c-github">
+              <i class="fab fa-github"></i>
+              github.com/itsmrajguru
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName">Full Name</label>
+                <input type="text" id="cName" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label for="cEmail">Email</label>
+                <input type="email" id="cEmail" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cSubject">Subject</label>
+              <input type="text" id="cSubject" placeholder="How can I help?" required />
+            </div>
+            <div class="form-group">
+              <label for="cMessage">Message</label>
+              <textarea id="cMessage" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" id="sendBtn">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+
+      </div>
     </div>
   </section>
+
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">MR<span>.</span></span>
+        <p>Designed &amp; Built by <strong>Mangesh Rajguru</strong> &nbsp;·&nbsp; 2026</p>
+        <div class="footer-socials">
+          <a href="https://github.com/itsmrajguru" target="_blank" id="ft-gh"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/mangesh-rajguru" target="_blank" id="ft-li"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:msrajguru7@gmail.com" id="ft-mail"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
