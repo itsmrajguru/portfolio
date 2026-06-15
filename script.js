@@ -90,19 +90,42 @@ if (contactForm) {
       return;
     }
 
-    const mailto = `mailto:msrajguru7@gmail.com`
-      + `?subject=${encodeURIComponent(subject)}`
-      + `&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+    formStatus.textContent = 'Sending message...';
+    formStatus.className = 'form-status';
 
-    window.location.href = mailto;
-
-    formStatus.textContent = '✓ Opening your email client…';
-    formStatus.className = 'form-status success';
-
-    setTimeout(() => {
-      formStatus.textContent = '';
-      formStatus.className = 'form-status';
-      contactForm.reset();
-    }, 4000);
+    fetch("https://formsubmit.co/ajax/msrajguru7@gmail.com", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+      if(data.success === "true" || data.success === true) {
+        formStatus.textContent = '✓ Message sent successfully!';
+        formStatus.className = 'form-status success';
+        contactForm.reset();
+      } else {
+        formStatus.textContent = `⚠ ${data.message || 'Something went wrong. Please try again.'}`;
+        formStatus.className = 'form-status error';
+      }
+    })
+    .catch(error => {
+      formStatus.textContent = '⚠ Failed to send message. Please check your connection.';
+      formStatus.className = 'form-status error';
+    })
+    .finally(() => {
+      setTimeout(() => {
+        formStatus.textContent = '';
+        formStatus.className = 'form-status';
+      }, 7000);
+    });
   });
 }

@@ -35,12 +35,10 @@
       <li><a href="#academics">Academics</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Hire Me</a>
   </nav>
 
   
   <section class="hero" id="home">
-    <div class="hero-bg-text" aria-hidden="true">MR</div>
 
     <div class="hero-content">
       <div class="hero-badge">
@@ -64,26 +62,15 @@
 
       <div class="hero-socials">
         <a href="https://github.com/itsmrajguru" target="_blank" id="hero-gh" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/mangesh-rajguru" target="_blank" id="hero-li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/mangesh-rajguru-800641373/" target="_blank" id="hero-li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a href="mailto:msrajguru7@gmail.com" id="hero-mail" aria-label="Email"><i class="fas fa-envelope"></i></a>
       </div>
     </div>
 
     <div class="hero-right">
-      <div class="avatar-wrap">
-        <div class="avatar-ring">
-          <div class="avatar-inner">MR</div>
-        </div>
-        <span class="online-status">
-          <span class="dot"></span> Available
-        </span>
-      </div>
-
-      <div class="float-card fc-cgpa">
-        <i class="fas fa-star"></i>
-        <div>
-          <strong>9.59 / 10</strong>
-          <span>CGPA</span>
+      <div class="hero-visual">
+        <div class="hero-avatar-placeholder">
+          <img src="assets/logo.png" alt="Mangesh Rajguru Logo" class="hero-logo" />
         </div>
       </div>
 
@@ -96,22 +83,11 @@
       </div>
     </div>
 
-    
-    <div class="hero-stats-bar">
-      <div class="stat-item"><strong>9.59</strong><span>CGPA</span></div>
-      <div class="stat-sep"></div>
-      <div class="stat-item"><strong>3+</strong><span>Projects</span></div>
-      <div class="stat-sep"></div>
-      <div class="stat-item"><strong>2</strong><span>Internships</span></div>
-      <div class="stat-sep"></div>
-      <div class="stat-item"><strong>MERN</strong><span>Full Stack</span></div>
-    </div>
   </section>
 
   
   <section class="about" id="about">
     <div class="container">
-      <div class="section-label">— About Me</div>
       <div class="about-grid">
 
         <div class="about-left">
@@ -120,7 +96,7 @@
           <p>Currently building the <strong>CareerSync ecosystem</strong> — a recruitment platform with AI-powered resume parsing, automated interview workflows, and a career guidance chatbot. Also deep-diving into Cloud & DevOps.</p>
           <div class="about-tags">
             <span>React.js</span><span>Node.js</span><span>MongoDB</span>
-            <span>Gemini API</span><span>Python</span><span>Git</span>
+            <span>Express</span><span>Gemini API</span>
           </div>
         </div>
 
@@ -128,12 +104,12 @@
           <div class="about-card-grid">
             <div class="mini-card">
               <i class="fas fa-globe"></i>
-              <h4>Web Dev</h4>
+              <h4>Web Development</h4>
               <p>Responsive, performant front-ends with React.js & modern CSS.</p>
             </div>
             <div class="mini-card">
               <i class="fas fa-server"></i>
-              <h4>Backend</h4>
+              <h4>Backend Development</h4>
               <p>REST APIs with Node.js, Express, MongoDB & JWT authentication.</p>
             </div>
             <div class="mini-card">
@@ -218,13 +194,11 @@
   
   <section class="experience" id="experience">
     <div class="container">
-      <div class="section-label">— Experience</div>
       <h2 class="section-heading">Work <span class="accent-text">Experience</span></h2>
 
       <div class="exp-grid">
 
         <div class="exp-card" id="exp-eyjds">
-          <div class="exp-num">01</div>
           <div class="exp-body">
             <div class="exp-meta">
               <div class="exp-logo e-logo">E</div>
@@ -244,7 +218,6 @@
         </div>
 
         <div class="exp-card" id="exp-kanini">
-          <div class="exp-num">02</div>
           <div class="exp-body">
             <div class="exp-meta">
               <div class="exp-logo k-logo">K</div>
@@ -269,15 +242,17 @@
   
   <section class="projects" id="projects">
     <div class="container">
-      <div class="section-label">— What I've Built</div>
       <h2 class="section-heading">Featured <span class="accent-text">Projects</span></h2>
 
       <div class="projects-grid">
 
-        <div class="project-card" data-num="01" id="proj-careersync">
+        <div class="project-card" id="proj-careersync">
           <div class="project-card-header">
             <div class="project-icon-wrap"><i class="fas fa-briefcase"></i></div>
-            <a href="https://github.com/itsmrajguru" target="_blank" class="gh-link"><i class="fab fa-github"></i> GitHub</a>
+            <div class="project-links">
+              <a href="https://careersyncplatformmsr.vercel.app" target="_blank" class="live-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/itsmrajguru/CareerSync_Frontend" target="_blank" class="gh-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
           <h3>CareerSync Platform</h3>
           <p>A MERN-based recruitment platform integrating AI-powered resume intelligence, job management, and automated interview workflows through secure microservice communication.</p>
@@ -286,10 +261,13 @@
           </div>
         </div>
 
-        <div class="project-card" data-num="02" id="proj-interviewpilot">
+        <div class="project-card" id="proj-interviewpilot">
           <div class="project-card-header">
             <div class="project-icon-wrap"><i class="fas fa-microphone-alt"></i></div>
-            <a href="https://github.com/itsmrajguru" target="_blank" class="gh-link"><i class="fab fa-github"></i> GitHub</a>
+            <div class="project-links">
+              <a href="https://interviewpilotmsr.vercel.app" target="_blank" class="live-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/itsmrajguru/InterviewPilot" target="_blank" class="gh-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
           <h3>InterviewPilot</h3>
           <p>An AI-powered mock interview platform conducting context-aware technical interviews tailored to users' resumes using Gemini API, AssemblyAI transcription, and a video pipeline.</p>
@@ -298,10 +276,13 @@
           </div>
         </div>
 
-        <div class="project-card" data-num="03" id="proj-guruai">
+        <div class="project-card" id="proj-guruai">
           <div class="project-card-header">
             <div class="project-icon-wrap"><i class="fas fa-robot"></i></div>
-            <a href="https://github.com/itsmrajguru" target="_blank" class="gh-link"><i class="fab fa-github"></i> GitHub</a>
+            <div class="project-links">
+              <a href="https://guruaimsr.vercel.app/" target="_blank" class="live-link"><i class="fas fa-external-link-alt"></i> Live</a>
+              <a href="https://github.com/itsmrajguru/GuruAI" target="_blank" class="gh-link"><i class="fab fa-github"></i> GitHub</a>
+            </div>
           </div>
           <h3>GuruAI</h3>
           <p>A specialized AI Career Consultant for CareerSync delivering personalized roadmaps and resume optimization through advanced Prompt Engineering and System Identity Design.</p>
@@ -317,7 +298,6 @@
   
   <section class="academics" id="academics">
     <div class="container">
-      <div class="section-label">— Education</div>
       <h2 class="section-heading">Academic <span class="accent-text">Journey</span></h2>
 
       <div class="acad-layout">
@@ -349,11 +329,6 @@
 
         <div class="achievements-col">
           <h3>Achievements</h3>
-          <ul class="ach-list">
-            <li><i class="fas fa-medal"></i> Selected at Institute Level in <strong>Smart India Hackathon (SIH)</strong></li>
-            <li><i class="fas fa-star"></i> Achieved <strong>10.0 SGPA</strong> in First Year of B.Tech</li>
-            <li><i class="fas fa-chalkboard-teacher"></i> Workshops on Python, Generative AI &amp; ChatGPT by <strong>GeeksforGeeks</strong></li>
-          </ul>
 
           <div class="github-contrib-card">
             <h4><i class="fab fa-github"></i> GitHub Contributions</h4>
@@ -372,7 +347,6 @@
       <div class="contact-inner">
 
         <div class="contact-left">
-          <div class="section-label">— Get in Touch</div>
           <h2 class="section-heading">Let's Build Something <span class="accent-text">Together</span></h2>
           <p>Open to internships, full-time roles, freelance projects, and collaborations. Feel free to reach out!</p>
 
@@ -381,15 +355,26 @@
               <i class="fas fa-envelope"></i>
               msrajguru7@gmail.com
             </a>
-            <a href="https://linkedin.com/in/mangesh-rajguru" target="_blank" class="c-link" id="c-linkedin">
-              <i class="fab fa-linkedin-in"></i>
-              linkedin.com/in/mangesh-rajguru
+            <a href="tel:+910000000000" class="c-link" id="c-phone">
+              <i class="fas fa-phone-alt"></i>
+              +91 9527241817
             </a>
-            <a href="https://github.com/itsmrajguru" target="_blank" class="c-link" id="c-github">
-              <i class="fab fa-github"></i>
-              github.com/itsmrajguru
-            </a>
+            <div class="c-link" id="c-location" style="cursor: default;">
+              <i class="fas fa-map-marker-alt"></i>
+              Yewalewadi, Pune (411048)
+            </div>
           </div>
+        </div>
+
+        <div class="contact-middle">
+          <div class="map-container">
+            <iframe 
+              src="https://maps.google.com/maps?q=Yewalewadi,+Haveli,+Pune,+411048&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              style="border: 1px solid var(--border); border-radius: 16px; width: 100%; height: 100%;" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <p class="map-caption">Yewalewadi, Pune, India</p>
         </div>
 
         <div class="contact-right">
@@ -410,7 +395,7 @@
             </div>
             <div class="form-group">
               <label for="cMessage">Message</label>
-              <textarea id="cMessage" rows="5" placeholder="Tell me about your project or opportunity…" required></textarea>
+              <textarea id="cMessage" rows="3" placeholder="Tell me about your project or opportunity…" required></textarea>
             </div>
             <button type="submit" class="btn-primary" id="sendBtn">
               Send Message <i class="fas fa-paper-plane"></i>
@@ -427,11 +412,10 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-logo">MR<span>.</span></span>
-        <p>Designed &amp; Built by <strong>Mangesh Rajguru</strong> &nbsp;·&nbsp; 2026</p>
+        <p>Designed &amp; Built by <strong>Mangesh S Rajguru</strong> &nbsp;·&nbsp; 2026</p>
         <div class="footer-socials">
           <a href="https://github.com/itsmrajguru" target="_blank" id="ft-gh"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/mangesh-rajguru" target="_blank" id="ft-li"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/mangesh-rajguru-800641373/" target="_blank" id="ft-li"><i class="fab fa-linkedin-in"></i></a>
           <a href="mailto:msrajguru7@gmail.com" id="ft-mail"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
